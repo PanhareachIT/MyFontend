@@ -1,0 +1,122 @@
+.container-fluid {
+    width: 100%;
+}
+
+table {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse   ;
+    table-layout: fixed;
+}
+
+table > thead {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+
+}
+
+table > thead > tr > th {
+    padding: 15px 0px;
+}
+    table > tbody > tr > td {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+table > tbody > tr > td > img {
+    width: 70px;
+}
+
+.container-fluid > .table {
+    width: 100%;
+
+}
+
+.container-fluid > .table > .content {
+    width: 80%;
+    margin: auto;
+    
+}
+
+table > tbody > tr > td > input {
+    padding: 10px;
+    width: 50px;
+}
+
+.calculate {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.calculate > .content {
+    width: 80%;
+    margin: auto;display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.calculate > .content > .content-left {
+    width: 45%;
+}
+
+.calculate > .content > .content-left div  {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.calculate > .content > .content-left > div > input {
+    padding: 8px;
+    width: 70%;
+}
+
+.calculate > .content > .content-left > div > button {
+    padding: 10px 16px;
+    /* width: 70%; */
+    background-color: rgb(72, 233, 72);
+    border: none;
+    border-radius: 5px;
+}
+
+.calculate > .content > .content-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.calculate > .content > .content-right > table {
+    width: 90%; 
+    margin-top: -3px;
+}
+
+.calculate > .content > .content-right > table td{
+    /* padding: 8px; */
+    border: 1px solid #dddddd;
+}
+
+.calculate > .content > .content-right > button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: rgb(36, 236, 36);
+    border-radius: 4px;
+    border: none;
+    margin-top: 15px;
+}
+
+@media (max-width : 600px){
+    .calculate > .content {
+        flex-direction: column;
+    }
+
+    .calculate > .content > .content-left {
+        width: 100%;
+    }
+
+    .calculate > .content > .content-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

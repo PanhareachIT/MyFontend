@@ -1,0 +1,101 @@
+.container-fluid > .contact {
+    width: 100%;
+}
+
+.container-fluid > .contact {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.container-fluid > .contact > .content{
+    width: 80%;
+    margin: auto;
+}
+
+.container-fluid > .contact > .content > .contact-detail{
+    width: 100%;
+    display: flex;
+}
+
+.container-fluid > .contact > .content > .contact-detail > .detail > div {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+.container-fluid > .contact > .content > .contact-detail > .detail > div > i {
+    margin-right: 10px  ;
+}
+
+.container-fluid > .form {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container-fluid > .form > .content {
+    width: 90%;
+    border: 1px solid black;
+    padding: 30px 50px;
+    margin: auto;
+    display: flex;
+    column-gap: 5%;
+}
+
+.container-fluid > .form > .content > .content-left {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-fluid > .form > .content > .content-left > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid > .form > .content > .content-left > form > input {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.container-fluid > .form > .content > .content-left > form > textarea {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.container-fluid > .form > .content > .content-right {
+    width: 30%;
+
+}
+
+.container-fluid > .form > .content > .content-right > div {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.container-fluid > .form > .content > .content-right > div > img {
+    margin-right: 15px;
+    
+
+}
+
+@media screen and (max-width: 1042px) {
+    .container-fluid > .contact > .content > .contact-detail {
+        flex-direction: column;
+    }
+
+    .container-fluid > .contact > .content > .contact-detail > .map {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .container-fluid > .contact > .content > .contact-detail > .map > iframe {
+        width: 100%;
+    }
+
+    .container-fluid > .form > .content > .content-left {
+        width: 50%
+    }
+}

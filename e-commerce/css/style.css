@@ -1,0 +1,655 @@
+:root {
+    --color-dark: #333;
+    --color-light: #fff;
+    --color-light-2: rgba(255, 255, 255, 0.8);
+    --color-light-3: rgba(255, 255, 255, 0.6);
+    --bg-header: #161616;
+    --bg-nav: #fa1939;
+    --bg-nav-active: #d90c16;
+    --txt-nav-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    --color-danger: #f2272f;
+    --color-pink: #fa5480;
+    --color-primary: #4390f8;
+    --color-success: #38c378;
+    --color-warning: #f9a62b;
+    --color-secondary: #555555;
+    --linear-gradient-overlay: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.8) 60%,
+      black 100%
+    );
+    --logo-size: 80px;
+    --default-font-family: "Koulen", Arial, Helvetica, sans-serif;
+    --second-font-family: "Battambang", cursive;
+    --default-transition: all 0.2s linear;
+    --box-content-shadow: 1px 2px 2px 1px rgb(0 0 0 / 20%);
+    --default-scale-in: scale(0.98);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #dedede;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(136, 136, 136);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: var(--default-font-family);
+  }
+.container-fluid {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.container-fluid > .header {
+    width: 100%;
+    position: sticky;
+    z-index: 999;
+    background-color: #E3E6F3;
+    top: 0;
+}
+
+.container-fluid > .header > .content {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     /* padding: 0px 80px; */
+}
+
+.container-fluid > .header > .content > .logo{
+    padding: 0px 80px;
+}
+
+.container-fluid > .header > .content > ul {
+    display: flex;
+    padding: 0px 80px;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container-fluid > .header > .content > ul > li {
+    
+}
+
+.container-fluid > .header > .content > ul > li > a {
+    color: black;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: relative;
+    /* background-color: #555555; */
+}
+
+.container-fluid > .header > .content > ul > li > a.active
+
+{
+    background-color: black;
+    color: white;
+}
+
+.container-fluid > .header > .content > ul > li > a:hover
+
+{
+    background-color: cyan;
+    color: white;
+}
+
+
+.hero {
+     width: 100%;
+}
+.hero > .content {
+    width: 100%;
+    height: 98vh;
+    background-image: url('../img/hero4.png');
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.hero > .content > .model {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 10%;
+}
+
+.hero > .content > .model > h1 {
+    color: var(--color-success);
+}
+
+.hero > .content > .model > a {
+    margin-top: 10px    ;
+    display: block;
+    background-image: url('../img/button.png');
+    text-decoration: none;
+    padding: 18px 80px 14px 65px;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    color: var(--color-success);
+    text-align: center;
+    
+}
+
+.feater {
+    display: flex;
+    margin: 50px 0px;
+}
+.feater > .content {
+    width: 80%;
+    margin: auto;
+}
+
+.feater > .content > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.feater > .content > div > .fe-box {
+    
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+    margin: 25px 25px;
+    height: 170px;
+    justify-content: space-evenly;
+    /* padding: 10px 20px; */
+}
+
+.feater > .content > div > .fe-box > .image {
+    width: 100%;
+}
+
+.container-fluid > .product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container-fluid > .product > .content {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    
+}
+
+.container-fluid > .product > .content  > .product-top {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+
+.container-fluid > .product > .content  > .product-bottom {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.container-fluid > .product > .content  > .product-bottom > a {
+    width: 250px;
+    margin: 20px;
+    position: relative;
+    text-decoration: none;
+    color: #161616;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.container-fluid > .product > .content  > .product-bottom > a > .image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container-fluid > .product > .content  > .product-bottom > a > .image > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container-fluid > .product > .content  > .product-bottom > a > .detail > .shop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-fluid > .product > .content  > .product-bottom > a > .detail > .shop > i {
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(104, 101, 101);
+    border-radius: 100px;
+}
+
+.container-fluid > .banner {
+    width: 100%;
+    height: 300px;
+}
+
+.container-fluid > .banner > .content {
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid > .banner > .content > .model {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/banner/b2.jpg');
+    background-size: cover;
+
+}
+
+.container-fluid > .banner > .content > .model > h3,
+.container-fluid > .banner > .content > .model > h1{
+    color: white;
+}
+
+.container-fluid > .banner > .content > .model > h1 > span {
+    color: var(--bg-nav)
+}
+
+.container-fluid > .banner > .content > .model > a {
+    display: block;
+    padding: 10px 50px;
+    background-image: url("../img/button.png");
+    background-size: cover;
+    color: white;
+    z-index: 1;
+    text-decoration: none;
+
+}
+
+.container-fluid > .arrivals {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container-fluid > .arrivals > .content {
+    width: 80%;
+    margin: auto;
+}
+
+.container-fluid > .arrivals > .content > .arrivals-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-fluid > .arrivals > .content > .arrivals-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container-fluid > .arrivals > .content > .arrivals-bottom > .card {
+    width: 250px;
+    margin: 20px 20px 20px 0px;
+    position: relative;
+    text-decoration: none;
+    color: #161616;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container-fluid > .arrivals > .content > .arrivals-bottom > .card > .image {
+    width: 100%;
+}
+
+.container-fluid > .arrivals > .content > .arrivals-bottom > .card > .image > img{
+    width: 100%;
+}
+
+.container-fluid > .arrivals > .content > .arrivals-bottom > .card > .detail > .shop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-fluid > .sm-banner {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container-fluid > .sm-banner > .content {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    height: 300px;
+    
+}
+
+.container-fluid > .sm-banner > .content > a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('../img/banner/b17.jpg');
+    background-size: cover;
+    padding: 100px 0px 0px 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.container-fluid > .sm-banner > .content > a > .model > button {
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+
+.container-fluid > .sm-banner-2 {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.container-fluid > .sm-banner-2 > .content {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    height: 200px;
+}
+
+.container-fluid > .sm-banner-2 > .content > a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('../img/banner/b7.jpg');
+    background-size: cover;
+    padding: 50px 0px 0px 25px;
+    text-decoration: none;
+    color: black;
+}
+.container-fluid > .newletter {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/banner/b1.jpg);
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.container-fluid > .newletter > .content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.container-fluid > .newletter > .content > .content-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-fluid > .newletter > .content > .content-left > h1 {
+    color: white;
+}
+
+.container-fluid > .newletter > .content > .content-left > p {
+    color: white;
+}
+
+.container-fluid > .newletter > .content > .content-left > p > span{
+    color: red
+}
+
+.container-fluid > .newletter > .content > form {
+    display: flex;
+    width: 40%;
+}
+
+.container-fluid > .newletter > .content > form > input {
+    width: 80%;
+    padding: 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.container-fluid > .newletter > .content > form > button {
+    width: 20%;
+    text-wrap: nowrap;
+    background-color: var(--color-success);
+    color: white;
+    border: none;
+}
+
+.container-fluid > .footer {
+     width: 100%;
+     margin-top: 50px;
+}
+
+.container-fluid > .footer > .content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-fluid > .footer > .content > .content-top {
+    width: 100%;
+    display: flex;
+}
+.container-fluid > .footer > .content > .content-top > .contact {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.container-fluid > .footer > .content > .content-top > .contact > .contactt {
+    margin-top: 15px;
+}
+
+.container-fluid > .footer > .content > .content-top > .contact > .add {
+    margin-top: 15px;
+}
+
+.container-fluid > .footer > .content > .content-top > .contact > .follow {
+    margin-top: 15px;
+}
+
+.container-fluid > .footer > .content > .content-top > .contact > .socail-media {
+    margin-top: 15px;
+}
+
+.container-fluid > .footer > .content > .content-top > .contact > .socail-media > i {
+    font-size: 25px;
+}
+
+.container-fluid > .footer > .content > .content-top > .about {
+    width: 20%;
+}
+
+
+.container-fluid > .footer > .content > .content-top > .account {
+    width: 20%;
+}
+
+.container-fluid > .footer > .content > .content-top > .install-app {
+    width: 30%;
+}
+
+.container-fluid > .footer > .content > .content-top > .install-app > .group-img{
+    width: 100%;
+    display: flex;
+    margin: 15px 0px;
+}
+
+.container-fluid > .footer > .content > .content-top > .install-app > .group-img > img{
+    width: 100%;
+    border: 1px solid var(--color-success);
+}
+
+.container-fluid > .footer > .content > .content-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hambugur {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .hambugur {
+        display: flex;
+        padding-right: 10%;
+    }
+    .hero > .content {
+        background-position: right 80%;
+    }
+    
+    .container-fluid > .header > .content > ul {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        right: -500px;
+        position: fixed;
+        top: 7%;
+        transition: all 0.2s linear;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-shadow: var(--box-content-shadow);
+        background-color: #E3E6F3;
+    }
+
+    .container-fluid > .header > .content > ul.active {
+        right: 0px;
+    }
+
+    .container-fluid > .header > .content > ul > li > a {
+        /* display: block; */
+        /* padding: 15px; */
+        text-align: center;
+    }
+    .hero{
+        /* height: 70vh; */
+        /* padding:  0px 80px; */
+        
+    }
+    .feater > .content {
+        justify-content: center;
+        
+    }
+
+    .feater > .content > .fe-box {
+        margin: 15px 15px;   
+    }
+
+    .container-fluid > .newletter > .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-fluid > .newletter > .content > form {
+        width: 70%;
+        
+    }
+
+    .feater > .content > .fe-box {
+        margin: 0px 0px;   
+    }
+
+    @media screen and (max-width : 778px) {
+        .container-fluid > .banner > .content > .model > h3, .container-fluid > .banner > .content > .model > h1 {
+            color: white;
+            font-size: 25px;
+        }
+
+        .container-fluid > .sm-banner-2 {
+            width: 100%;
+            margin-top: 50px;
+        }
+        
+        .container-fluid > .newletter {
+            
+            margin-top: 150px;
+        }
+        .container-fluid > .footer > .content > .content-top {
+            flex-direction: column;
+        }
+
+        .container-fluid > .footer > .content > .content-top > .contact {
+            width: 100%;
+            margin-top: 10%;
+            text-align: center;
+            align-items: center;
+        }
+        .container-fluid > .footer > .content > .content-top > .account {
+            width: 100%;
+            margin-top: 10%;
+            text-align: center;
+
+        }
+        .container-fluid > .footer > .content > .content-top > .install-app {
+            width: 100%;
+            margin-top: 10%;
+            text-align: center;
+        }
+        .container-fluid > .footer > .content > .content-top > .about {
+            width: 100%;
+            margin-top: 10%;
+            text-align: center;
+        }
+    }
+
+}
